@@ -80,18 +80,11 @@ console.log( 'The sum of supply changes is:' , sum )
 console.log('9. Filling boxes with a "while" loop');
 let parts = 572;
 let i = 7;
+let box = 0;
 
 
 while(parts >= 7){
-   parts = parts / 7;
-   console.log('boxes used' , parts);
+   parts -= 7;
+   box ++;
 }
-
-let p = 572
-
-while (p >= 7){
-    console.log('boxes used: ' , p);
-    p = p / 7;
-}
-
-// I know I am missing something here. I left all my work so you could see my thought process.
+console.log('boxes filled:' , box , 'parts remaining:' , parts);

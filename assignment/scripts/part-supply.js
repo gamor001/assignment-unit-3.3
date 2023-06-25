@@ -20,7 +20,7 @@ console.log(supplyChanges[1]);
 // 4. The last item was added by mistake. Remove it from the 'supplyChanges' 
 //    array & console.log the value removed.
 console.log('4. Removed item:');
-console.log(supplyChanges.pop(11));
+console.log(supplyChanges.pop());
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 console.log('5. Adding 25 to supplyChanges.');
@@ -88,3 +88,18 @@ while(parts >= 7){
    box ++;
 }
 console.log('boxes filled:' , box , 'parts remaining:' , parts);
+
+
+//reviewed with Alex during lecture
+let partsToShip = 572;
+let boxSize = 7;
+let filledBoxes = 0;
+
+function shipParts(){
+    while(partsToShip > boxSize){
+        partsToShip -= boxSize;
+        filledBoxes += 1
+    }
+    return  console.log( 'Parts to ship:', partsToShip) , console.log('full boxes:' , filledBoxes);
+}
+
